@@ -30,8 +30,10 @@
 
 # ShopsRUs WebApi Projesini Çalıştırmak
 1. Projedeki katmanların App.config ve Web.config dosyalarında bulunan connectionString alanındaki Server isimlerine '.' değerini vererek default olarak var olan Server'da oluşturulmasını sağladım. Herhangi bir problemde ilk olarak Server isimlerini kontrol edebilirsiniz.
-Örnek ; 
-	<connectionStrings>
-		<add name="ApiContext" connectionString="Server=.; Database=ShopsRUsDb; Integrated Security=true;"
-			 providerName="System.Data.SqlClient"/>
-	</connectionStrings>
+
+2. ShopsRUs.DAL Katmanına gelip Projeyi Set up Startup Projet'i seçmeli ve ardından Package Manager Console'dan 'update-database' komutunu çalıştırmalısınız.
+Bu komut veritabanınıza Migration ile Database ve tabloları oluşturacaktır.
+
+3. Ardından ShopsRUs.Api projesini tekrardan Startup projesi olarak seçip çalıştırabilirsiniz.
+
+4. Proje ayağa kalktığında '/swagger' ile swagger ekranına ulaşabilirsiniz. (https://localhost:44303/swagger/ui/index#/Home) 
