@@ -37,3 +37,5 @@ Bu komut veritabanınıza Migration ile Database ve tabloları oluşturacaktır.
 3. Ardından ShopsRUs.Api projesini tekrardan Startup projesi olarak seçip çalıştırabilirsiniz.
 
 4. Proje ayağa kalktığında '/swagger' ile swagger ekranına ulaşabilirsiniz. (https://localhost:44303/swagger/ui/index#/Home) 
+
+UML Class Diagram projenin içinde yer almaktadır. (https://github.com/emrahsinekli/ShopsRUsWebApi/blob/master/UML%20Class%20Diagram.jpg)
