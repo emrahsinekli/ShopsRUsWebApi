@@ -15,6 +15,7 @@
 --> ShopsRUs.DAL(.Net Framework 4.7.2) Katmanı
 
 - WebApi projesinin Data Access Katmanıdır. Code First yaklaşımı kullanılarak. Migration uygulanarak veritabanında tablo configurasyonları gerçekleştirilmiştir.
+- Migration ile MSSql veritabanına Database ve tabloları oluşturup içinde default olarak dataları insert etmektedir.
 - Bu uygulamayı bilgisayarınızda çalıştırmak isterneniz Migration!u aktif edip sonrasında ise database'inizi update etmelisiniz. İleride detaylı açıklama mevcuttur.
 
 --> ShopsRUs.Domains(.Net Framework 4.7.2) Katmanı
@@ -25,3 +26,12 @@
 --> ShopsRUs.Moq(.Net Framework 4.7.2) Katmanı
 
 - Projenin Test katmanıdır. Şuan sadece GetAllInvoice endpointi için kullanılıyor.
+
+
+# ShopsRUs WebApi Projesini Çalıştırmak
+1. Projedeki katmanların App.config ve Web.config dosyalarında bulunan connectionString alanındaki Server isimlerine '.' değerini vererek default olarak var olan Server'da oluşturulmasını sağladım. Herhangi bir problemde ilk olarak Server isimlerini kontrol edebilirsiniz.
+Örnek ; 
+	<connectionStrings>
+		<add name="ApiContext" connectionString="Server=.; Database=ShopsRUsDb; Integrated Security=true;"
+			 providerName="System.Data.SqlClient"/>
+	</connectionStrings>
