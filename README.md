@@ -3,6 +3,7 @@
 # ShopsRUs WebApi Bilgileri
 
 - Bu proje Monolitik Mimari kullanılarak .Net Framework ortamında geliştirilmiştir. Bu WebApi projesi 4 katmandan oluşmaktadır;
+
 ![image](https://user-images.githubusercontent.com/98356742/163841088-029a0113-b5ab-4c0a-acb9-7d7e7d66fce7.png)
 
 --> ShopsRUs.Api(.Net Framework 4.7.2) Katmanı
